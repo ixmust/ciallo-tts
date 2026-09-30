@@ -25,18 +25,27 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: "LibreTTS",
     locale: "zh_CN",
-    images: [{ url: "/image/TTS.png" }],
+    images: [{ url: "/image/LibreSpark.png" }],
   },
   twitter: {
     card: "summary_large_image",
     title: TITLE,
     description: "LibreTTS是一款免费的在线文本转语音工具,支持多种声音选择,可调节语速和语调,提供即时试听和下载功能。",
-    images: ["/image/TTS.png"],
+    images: ["/image/LibreSpark.png"],
   },
   icons: {
-    icon: "/image/TTS.png",
-    apple: "/image/TTS.png",
-    shortcut: "/image/TTS.png",
+    icon: [
+      { url: "/image/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/image/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/image/favicon.ico", type: "image/x-icon" },
+    ],
+    apple: "/image/apple-touch-icon.png",
+    shortcut: "/image/favicon.ico",
+  },
+  manifest: "/site.webmanifest",
+  other: {
+    "msapplication-TileColor": "#4a90e2",
+    "msapplication-TileImage": "/image/mstile-150x150.png",
   },
 };
 
